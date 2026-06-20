@@ -15,7 +15,7 @@ The project contains:
 
 ## Project Structure
 
-```text
+```
 Single Bet Placement/
 │
 ├── api/
