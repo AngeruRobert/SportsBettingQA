@@ -113,6 +113,30 @@ This is important because:
 
 ---
 
+## Tooling Choices
+
+### Selenium
+
+Selenium was used for the UI E2E test because it allows browser-level validation of the critical user journey: selecting odds, entering a stake, placing a bet, and verifying the success modal.
+
+### Pytest
+
+Pytest was used as the test runner because it is lightweight, readable, and easy to structure for both UI and API tests. It also supports fixtures, markers, and simple command-line execution.
+
+### Requests
+
+The `requests` library was used for API automation because it provides a simple and readable way to send direct API requests and validate backend business rules.
+
+### Pytest HTML
+
+`pytest-html` was used to generate a simple HTML test report after execution. This keeps reporting lightweight without adding a more complex reporting tool.
+
+### Postman
+
+Postman was used for manual API testing and exploratory validation. It helped verify API behavior directly, reproduce backend issues, and confirm business-rule defects such as negative stake handling, over-balance bets, currency mismatch, and balance reset behavior.
+
+---
+
 ## Setup
 
 Create a virtual environment:
