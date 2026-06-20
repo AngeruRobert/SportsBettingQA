@@ -20,7 +20,9 @@ UI Bugs
 
 **Business Impact**: The user receives incorrect financial information after placing a bet, which can damage trust and create payout disputes.
 
-**Evidence**: ![BUG-UI-001.png](Screenshots/BUG-UI-001.png)
+**Evidence**:
+
+![BUG-UI-001.png](Screenshots/BUG-UI-001.png)
 
 ### BUG-UI-002 — Past matches are displayed in search results
 
@@ -37,7 +39,9 @@ UI Bugs
 
 **Business Impact**: Users may be confused by unavailable/expired events, and this increases the risk of invalid betting flows if past matches can also be selected.
 
-**Evidence**:![BUG-UI-002.png](Screenshots/BUG-UI-002.png)
+**Evidence**:
+
+![BUG-UI-002.png](Screenshots/BUG-UI-002.png)
 
 ### BUG-UI-003 — Balance is not refreshed in real time after placing a bet
 
@@ -56,7 +60,9 @@ UI Bugs
 
 **Business Impact**: Users may see an incorrect available balance and may believe they still have more funds than they actually do.
 
-**Evidence**: [BUG-UI-003.mp4](Screenshots/BUG-UI-003.mp4)
+**Evidence**:
+
+[BUG-UI-003.mp4](Screenshots/BUG-UI-003.mp4)
 
 ### BUG-UI-004 — Teams are swapped in the success modal
 
@@ -92,7 +98,9 @@ UI Bugs
 
 **Business Impact**: Users cannot easily review their placed bets, and QA cannot reliably confirm bet history/state behavior from the UI.
 
-**Evidence**: [BUG-UI-005.mp4](Screenshots/BUG-UI-005.mp4)
+**Evidence**:
+
+[BUG-UI-005.mp4](Screenshots/BUG-UI-005.mp4)
 
 ### BUG-UI-006 — Misleading `Remove All` text for a single-bet feature
 
@@ -109,7 +117,9 @@ UI Bugs
 
 **Business Impact**: The wording is misleading and may confuse users or testers about whether the product supports single bets only or multi-bet behavior.
 
-**Evidence**: ![](Screenshots/BUG-UI-006.png)
+**Evidence**:
+
+![BUG-UI-006.png](Screenshots/BUG-UI-006.png)
 
 API Bugs
 ---
@@ -133,7 +143,9 @@ API Bugs
 
 **Business Impact**: This is a financial integrity issue because negative bets can corrupt balance calculations and may allow balance manipulation.
 
-**Evidence**: ![BUG-API-001.png](Screenshots/BUG-API-001.png)
+**Evidence**:
+
+![BUG-API-001.png](Screenshots/BUG-API-001.png)
 
 ### BUG-API-002 — User can place bets that exceed the current balance
 
@@ -155,7 +167,9 @@ API Bugs
 
 **Business Impact**: Users can place unaffordable bets, which breaks a core financial validation rule and can cause incorrect account balances.
 
-**Evidence**: ![BUG-API-002.png](Screenshots/BUG-API-002.png)
+**Evidence**:
+
+![BUG-API-002.png](Screenshots/BUG-API-002.png)
 
 ### BUG-API-003 — Balance reset gives 120 EUR instead of 125.50 EUR
 
@@ -173,7 +187,9 @@ API Bugs
 
 **Business Impact**: Incorrect reset balance creates inconsistent test data and impacts all balance-related validation.
 
-**Evidence**: [BUG-API-003.mp4](Screenshots/BUG-API-003.mp4)
+**Evidence**:
+
+[BUG-API-003.mp4](Screenshots/BUG-API-003.mp4)
 
 ### BUG-API-004 — API response currency is USD instead of EUR
 
@@ -194,7 +210,9 @@ API Bugs
 
 **Business Impact**: Currency mismatch creates serious financial and data-contract inconsistencies between the API, UI, and requirements.
 
-**Evidence**: ![BUG-API-004.png](Screenshots/BUG-API-004.png)
+**Evidence**:
+
+![BUG-API-004.png](Screenshots/BUG-API-004.png)
 
 ### BUG-API-005 — API returns 200 during stress test but not all bets are processed
 
@@ -218,7 +236,9 @@ API Bugs
 
 **Business Impact**: The system gives false success responses, which can cause data loss, unreliable bet placement, and incorrect user/account state under load.
 
-**Evidence**: [BUG-API-005.mp4](Screenshots/BUG-API-005.mp4)
+**Evidence**:
+
+[BUG-API-005.mp4](Screenshots/BUG-API-005.mp4)
 
 UI + API Bugs
 ---
@@ -250,4 +270,6 @@ UI + API Bugs
 
 **Business Impact**: This breaks the core business rule that only upcoming/pre-match events can be used for betting and creates invalid betting transactions.
 
-**Evidence**: [BUG-BOTH-001.mp4](Screenshots/BUG-BOTH-001.mp4)
+**Evidence**:
+
+[BUG-BOTH-001.mp4](Screenshots/BUG-BOTH-001.mp4)
