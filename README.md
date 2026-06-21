@@ -250,12 +250,4 @@ These failures are expected because the tests validate important business rules 
 
 Selenium 4 uses Selenium Manager, so ChromeDriver usually does not need to be downloaded manually.
 
-The following local files/folders should not be included in the final submission zip:
-
-```text
-.venv/
-.idea/
-*.iml
-reports/
-```
 
